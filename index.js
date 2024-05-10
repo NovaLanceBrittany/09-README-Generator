@@ -88,31 +88,32 @@ const askQuestions = (callback) => inquirer.prompt([
 
 
 
-module.exports = {
-  askQuestions,
-  writeREADME: writeREADME
+// Write the README
+function writefile(fileName, contents) {
+  fs.writeFile(fileName, contents, (err) => {
+    if (err) {
+      console.log("Something went wrong at the writeREADME Funcation", err)
+    } else {
+      console.log("File is writing!")
+    }
+  })
 }
-
-
-
-// TODO: Create a function to write README file
-function writeREADME(fileName, contents) {
-  fs.writeFile(fileName, contents, (err) =>
-     if ( err ) console.log("Something went wrong at the writeREADME Funcation", err)
-  )
-};
-
-
-
-// TODO: Create a function to initialize app
+  
+  
+  
+// Function to initialize app
 function init() {
   console.log("The app is being initialized!")
 }
 
 // Function call to initialize app
 init(
-  askQuestions( (contents) => generateMarkdown('log.txt', contents) )
+  askQuestions( (contents) => generateMarkdown('README.md', contents) )
 );
 
 
 
+module.exports = {
+  askQuestions,
+  writefile: writefile
+}
