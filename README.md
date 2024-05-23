@@ -57,14 +57,12 @@ The user clicks on the links in the Table of Contents, then they are taken to th
 ## Mock-Up:
 The following image shows the web application's appearance and functionality:
 
-![Generated exampleREAD.ME](file/path)
+![Generated exampleREAD.ME](./assets/images/exampleREADME.png)
 
 
 ## The Deployment:
 
 [The Repo:](https://github.com/NovaLanceBrittany/HW-09-README-Generator)
-
-[The Deployment:](pages-link)
 
 [The Google Drive:](https://drive.google.com/drive/folders/1iQWB7sDHObm56I20UhRmVBNozO-zyXbg?usp=sharing)
 
