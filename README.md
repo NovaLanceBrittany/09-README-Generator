@@ -59,9 +59,9 @@ The user clicks on the links in the Table of Contents, then they are taken to th
 ## Mock-Up:
 The following image shows the web application's appearance and functionality:
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Woodbury.](./assets/img/start-page.png)
+![Generated READ.ME](file/path)
 
-![This displays the results](./assets/img/search-results-png.png)
+![This displays the results](file/path)
 
 
 ## The Deployment:

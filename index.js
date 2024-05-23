@@ -1,11 +1,11 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
-const { generateMarkdown } = require("./utils/generateMarkdown");
+const {generateMarkdown} = require("./utils/generateMarkdown");
 
 
 
 //The Questions that will fill out the README
-const askQuestions = (callback) => inquirer.prompt([
+const askQuestions = () => inquirer.prompt([
   {
     type: 'input',
     message: "What is the Title of your Project?",
@@ -68,29 +68,30 @@ const askQuestions = (callback) => inquirer.prompt([
   },
 
 
-]).then ( ({ title, description, installation, usage, contributing, test, license, ghusername, ghlink, email }) => {
-  console.log("The Questions from index.js are working")
+])
+// .then ( ({ title, description, installation, usage, contributing, test, license, ghusername, ghlink, email }) => {
+//   console.log("The Questions from index.js are working")
 
-  const result = `
-  Here are your answers, please review: 
-  Project Title: ${title}
-  Description: ${description}
-  How to Install: ${installation}
-  How is it Used: ${usage}
-  Who is Contributing: ${contributing}
-  The Test Instructions: ${test}
-  Licenses Needed: ${license}
-  Project Manager GitHub Username: ${ghusername}
-  Project Manager Github Profile Link: ${ghlink}
-  Project Manager Contact Email: ${email}`;
-  callback(result)
-})
+//   const result = `
+//   Here are your answers, please review: 
+//   Project Title: ${title}
+//   Description: ${description}
+//   How to Install: ${installation}
+//   How is it Used: ${usage}
+//   Who is Contributing: ${contributing}
+//   The Test Instructions: ${test}
+//   Licenses Needed: ${license}
+//   Project Manager GitHub Username: ${ghusername}
+//   Project Manager Github Profile Link: ${ghlink}
+//   Project Manager Contact Email: ${email}`;
+//   return result
+// })
 
 
 
 // Write the README
-function writefile(fileName, contents) {
-  fs.writeFile(fileName, contents, (err) => {
+function writefile(fileName, result) {
+  fs.writeFile(fileName, generateMarkdown(result), (err) => {
     if (err) {
       console.log("Something went wrong at the writeREADME Funcation", err)
     } else {
@@ -104,12 +105,11 @@ function writefile(fileName, contents) {
 // Function to initialize app
 function init() {
   console.log("The app is being initialized!")
+  askQuestions().then ( (contents) => writefile('exampleREADME.md', contents) )
 }
 
 // Function call to initialize app
-init(
-  askQuestions( (contents) => generateMarkdown('README.md', contents) )
-);
+init();
 
 
 
