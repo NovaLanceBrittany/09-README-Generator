@@ -12,8 +12,6 @@ The application will be invoked by using the following command:
 node index.js
 ```
 
-
-
 ## Technology Stacks:
 - Day.js Library
 
@@ -59,9 +57,7 @@ The user clicks on the links in the Table of Contents, then they are taken to th
 ## Mock-Up:
 The following image shows the web application's appearance and functionality:
 
-![Generated READ.ME](file/path)
-
-![This displays the results](file/path)
+![Generated exampleREAD.ME](file/path)
 
 
 ## The Deployment:
@@ -70,62 +66,5 @@ The following image shows the web application's appearance and functionality:
 
 [The Deployment:](pages-link)
 
+[The Google Drive:](https://drive.google.com/drive/folders/1iQWB7sDHObm56I20UhRmVBNozO-zyXbg?usp=sharing)
 
-==============================================
-
-
-
-
-
-
-
-
-
-
-
-### Walkthrough Video: 27%
-
-* A walkthrough video that demonstrates the functionality of the README generator must be submitted, and a link to the video should be included in your README file.
-
-* The walkthrough video must demonstrate how a user would invoke the application from the command line.
-
-* The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
-
-* The walkthrough video must demonstrate a generated README that matches the user input and has a functioning table of contents.
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-	* Uses the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4).
-
-
-
-* Repository contains a high-quality README with description and a link to walkthrough video.
-
-
-## Review
-
-You are required to submit the following for review:
-
-* A walkthrough video demonstrating the functionality of the application.
-
-* A sample README.md file for a project repository generated using your application
-
-
-
-## The Deployment:
-
-[The Repo:](https://github.com/NovaLanceBrittany/HW-09-README-Generator)
-
-[The Deployment:](pages-link)
-
-
-## Getting Started
-
-
-* Include a video of the typical user flow through your application. This includes views of the prompts and the responses after their selection.
-
-* Refer to the [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) for additional guidance on creating a video.
-
-* Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
